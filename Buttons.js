@@ -21,7 +21,7 @@ $("#btn1").click(() => {
   $("#kap").empty();
   // append new chapter
   $("#kap").append(
-    `<img src='/images/k1/k1i1.jpg' alt=''/><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto</p>${copy}`
+    `<img src='/images/k1/k1i1.JPG' alt=''/><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto</p>${copy}`
   );
 });
 
@@ -39,7 +39,7 @@ $("#btn2").click(() => {
   $("#kap").append(`${heading}${kap2Img}${kap2P}${copy}`);
 });
 const heading = `<h3>Nastavení výkresu</h3>`;
-const kap2Img = `<img class='w40' src='/images/k1/k1i2.jpg' alt=''/>`;
+const kap2Img = `<img class='w40' src='/images/k1/k1i2.JPG' alt=''/>`;
 const kap2P = `<p>(název výkresu)_(číslo objektu)_(program).dwg
 Si_101_C3D.dwg
 Po_101_C3D.dwg</p>`;
