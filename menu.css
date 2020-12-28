@@ -1,0 +1,113 @@
+/* buttons */
+
+.list-item-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style-type: none;
+  position: relative;
+  -webkit-transform: rotate(var(--navbar-angle)) skew(20deg, 5deg);
+  transform: rotate(var(--navbar-angle)) skew(20deg, 5deg);
+  display: inline-block;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.list-item {
+  background: var(--main-dark-color);
+  color: var(--main-red-color);
+  text-align: center;
+  height: 2.5rem;
+  width: 13rem;
+
+  /* line-height: 2.5rem; */
+  border-bottom: 1px solid var(--main-dark-color);
+  position: relative;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  -webkit-box-shadow: -2rem 1.5rem 0 transparent;
+  box-shadow: -2rem 1.5rem 0 transparent;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.list-item:hover {
+  background: var(--main-red-color);
+  border-bottom: 1px solid var(--main-red-color);
+  color: #fffcfb;
+  -webkit-transform: translate(0.9rem, -0.9rem);
+  transform: translate(0.9rem, -0.9rem);
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  -webkit-box-shadow: -2rem 2rem 0 transparent;
+  box-shadow: -2rem 2rem 0 transparent;
+}
+
+.list-item:hover:before,
+.list-item:hover:after {
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.list-item:hover:before {
+  background: var(--main-red-color);
+  width: 1rem;
+  top: 0.5rem;
+  left: -0.95rem;
+}
+
+.list-item:hover:after {
+  background: var(--main-red-color);
+  width: 1rem;
+  bottom: -7rem;
+  left: 5.5rem;
+  height: 13rem;
+}
+
+.list-item:before,
+.list-item:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  width: 0.5rem;
+}
+
+.list-item:after {
+  height: 13rem;
+  background: var(--main-dark-color);
+  bottom: -6.8rem;
+  left: 6rem;
+  -webkit-transform: rotate(90deg) skew(0, 45deg);
+  transform: rotate(90deg) skew(0, 45deg);
+}
+
+.list-item:before {
+  height: 2.5rem;
+  background: var(--main-dark-color);
+  top: 0.25rem;
+  left: -0.46rem;
+  -webkit-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+}
+
+.btn-active,
+.btn-active::after,
+.btn-active::before {
+  color: #fffcfb;
+  background: var(--main-red-color);
+}

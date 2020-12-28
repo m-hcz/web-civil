@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./GlobalVariables.css" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./media.css" />
+    <link rel="stylesheet" href="./scrollbar.css" />
+    <link rel="stylesheet" href="./imgWidth.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title>Civil 3D tutoriál</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <div class="heading">
+          <div class="icon-setting">
+            <button id="theme" class="btn-setting">
+              <i class="fas fa-adjust"></i>
+            </button>
+            <button id="plus" class="btn-setting">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+            <button id="minus" class="btn-setting">
+              <i class="fas fa-minus-circle"></i>
+            </button>
+            <button id="setting" class="btn-setting">
+              <i class="fas fa-question-circle"></i>
+            </button>
+          </div>
+          <button id="btn-heading">
+            <h1>Civil 3D</h1>
+            <h2>Tutoriál</h2>
+          </button>
+        </div>
+        <div id="menu-container" class="buttons">
+          <div class="list-item-container">
+            <ul id="menu">
+              <li>
+                <button id="btn1" class="button list-item">
+                  Nastavení výkresu
+                </button>
+              </li>
+              <li>
+                <button id="btn2" class="button list-item">
+                  Terén, mapové podklady
+                </button>
+              </li>
+              <li>
+                <button id="btn3" class="button list-item">Trasa</button>
+              </li>
+              <li>
+                <button id="btn4" class="button list-item">
+                  Podélný profil
+                </button>
+              </li>
+              <li>
+                <button id="btn5" class="button list-item">
+                  Šablona typických řezů
+                </button>
+              </li>
+              <li>
+                <button id="btn6" class="button list-item">Koridor</button>
+              </li>
+              <li>
+                <button id="btn6" class="button list-item">Klopení</button>
+              </li>
+              <li>
+                <button id="btn6" class="button list-item">Příčné řezy</button>
+              </li>
+              <li>
+                <button id="btn6" class="button list-item">
+                  Kubatury, reporty
+                </button>
+              </li>
+              <li>
+                <div>
+                  <button id="btn6" class="button list-item">Tisk</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section id="start" class="box-start">
+        <div class="icon-container">
+          <div>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+          </div>
+          <div>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+          </div>
+          <div>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+            <i class="fas fa-arrow-circle-up rotate-arrow"></i>
+          </div>
+        </div>
+        <p class="copyright">MH &copy; All Right Reserved</p>
+      </section>
+      <section id="kap" class="box2 box-hidden"></section>
+    </div>
+    <script type="text/javascript" src="./GlobalVariables.js"></script>
+    <script type="text/javascript" src="./Buttons.js"></script>
+  </body>
+</html>
